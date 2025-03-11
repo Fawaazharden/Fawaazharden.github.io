@@ -24,7 +24,7 @@ const Header = () => {
           </a>
           <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#testimonials" className="hover:text-primary transition-colors">Testimonials</a>
-          <Button asChild className="flex items-center gap-2">
+          <Button asChild className="flex items-center gap-2 bg-primary hover:bg-primary/90">
             <a href="#contact">
               <Phone size={18} />
               Contact Us
@@ -47,7 +47,7 @@ const Header = () => {
               </a>
               <a href="#about" className="hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>About</a>
               <a href="#testimonials" className="hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Testimonials</a>
-              <Button asChild className="flex items-center gap-2 w-full justify-center">
+              <Button asChild className="flex items-center gap-2 w-full justify-center bg-primary hover:bg-primary/90">
                 <a href="#contact" onClick={() => setIsMenuOpen(false)}>
                   <Phone size={18} />
                   Contact Us
