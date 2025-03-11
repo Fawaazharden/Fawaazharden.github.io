@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Briefcase, Users, Phone } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
@@ -9,17 +9,26 @@ const Header = () => {
   return (
     <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-playfair font-bold text-primary">
-          StaffingPro
+        <div className="flex items-center gap-2">
+          <Briefcase className="h-6 w-6 text-primary" />
+          <div className="text-2xl font-playfair font-bold text-primary">
+            StaffingPro
+          </div>
         </div>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 items-center">
-          <a href="#services" className="hover:text-primary transition-colors">Services</a>
+          <a href="#services" className="hover:text-primary transition-colors flex items-center gap-1">
+            <Users size={18} />
+            <span>Services</span>
+          </a>
           <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#testimonials" className="hover:text-primary transition-colors">Testimonials</a>
-          <Button asChild>
-            <a href="#contact">Contact Us</a>
+          <Button asChild className="flex items-center gap-2">
+            <a href="#contact">
+              <Phone size={18} />
+              Contact Us
+            </a>
           </Button>
         </div>
 
@@ -32,11 +41,17 @@ const Header = () => {
         {isMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-white border-b md:hidden">
             <div className="flex flex-col p-4 gap-4">
-              <a href="#services" className="hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Services</a>
+              <a href="#services" className="hover:text-primary transition-colors flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
+                <Users size={18} />
+                <span>Services</span>
+              </a>
               <a href="#about" className="hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>About</a>
               <a href="#testimonials" className="hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Testimonials</a>
-              <Button asChild>
-                <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact Us</a>
+              <Button asChild className="flex items-center gap-2 w-full justify-center">
+                <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+                  <Phone size={18} />
+                  Contact Us
+                </a>
               </Button>
             </div>
           </div>
