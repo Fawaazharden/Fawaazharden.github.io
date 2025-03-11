@@ -1,22 +1,20 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
+import ServicesSection from "@/components/ServicesSection";
 import { 
-  Briefcase, 
   Users, 
   ChartBar, 
   Building2, 
   Star, 
   ArrowRight, 
   Award, 
-  Clock, 
-  BarChart4, 
   Phone, 
   Mail, 
   ChevronRight,
   CheckCircle,
-  TrendingUp
+  TrendingUp,
+  Briefcase
 } from "lucide-react";
 
 const Index = () => {
@@ -24,7 +22,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       
-      {/* Hero Section with background pattern */}
+      {/* Hero Section */}
       <section className="pt-24 pb-16 md:pt-32 md:pb-24 px-4 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 pattern-grid-lg pointer-events-none" />
         <div className="container mx-auto text-center relative z-10">
@@ -66,50 +64,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="h-px w-8 bg-primary"></div>
-            <span className="text-primary font-medium">WHAT WE OFFER</span>
-            <div className="h-px w-8 bg-primary"></div>
-          </div>
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-center mb-12">
-            Our Services
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-6 hover:shadow-lg transition-shadow group">
-              <div className="bg-blue-100 rounded-full p-4 inline-block mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                <Briefcase className="h-10 w-10 text-primary group-hover:text-white transition-colors" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Permanent Placement</h3>
-              <p className="text-gray-600 mb-4">Find the perfect permanent addition to your team with our comprehensive recruitment solutions.</p>
-              <a href="#" className="text-primary flex items-center gap-1 hover:underline">
-                Learn More <ChevronRight className="h-4 w-4" />
-              </a>
-            </Card>
-            <Card className="p-6 hover:shadow-lg transition-shadow group">
-              <div className="bg-blue-100 rounded-full p-4 inline-block mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                <Clock className="h-10 w-10 text-primary group-hover:text-white transition-colors" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Contract Staffing</h3>
-              <p className="text-gray-600 mb-4">Flexible staffing solutions for your temporary and project-based needs.</p>
-              <a href="#" className="text-primary flex items-center gap-1 hover:underline">
-                Learn More <ChevronRight className="h-4 w-4" />
-              </a>
-            </Card>
-            <Card className="p-6 hover:shadow-lg transition-shadow group">
-              <div className="bg-blue-100 rounded-full p-4 inline-block mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                <BarChart4 className="h-10 w-10 text-primary group-hover:text-white transition-colors" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Executive Search</h3>
-              <p className="text-gray-600 mb-4">Strategic recruitment of senior executives and specialized professionals.</p>
-              <a href="#" className="text-primary flex items-center gap-1 hover:underline">
-                Learn More <ChevronRight className="h-4 w-4" />
-              </a>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <ServicesSection />
 
       {/* Stats Section */}
       <section className="py-16 bg-primary text-white">
@@ -386,3 +341,4 @@ const Index = () => {
 };
 
 export default Index;
+
