@@ -99,10 +99,10 @@ const Index = () => {
                 <span className="text-primary font-medium">ABOUT US</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6">
-                Why Choose StaffingPro For Your Hiring Needs?
+                Why Choose TalentPro For Your Hiring Needs?
               </h2>
               <p className="text-gray-600 mb-6">
-                With over a decade of experience in the recruitment industry, StaffingPro has built a reputation for connecting the right talent with the right opportunities.
+                With over a decade of experience in the recruitment industry, TalentFOrce has built a reputation for connecting the right talent with the right opportunities.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -190,7 +190,7 @@ const Index = () => {
                   <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <p className="text-gray-600 mb-8 italic">"StaffingPro helped us find the perfect candidates for our expanding tech team. Their understanding of our needs and quick response time made all the difference."</p>
+              <p className="text-gray-600 mb-8 italic">"TalentForce helped us find the perfect candidates for our expanding tech team. Their understanding of our needs and quick response time made all the difference."</p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                   <span className="font-bold text-primary">SJ</span>
@@ -210,7 +210,7 @@ const Index = () => {
                   <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <p className="text-gray-600 mb-8 italic">"Working with StaffingPro has transformed our hiring process. They consistently deliver high-quality candidates who fit both our technical requirements and company culture."</p>
+              <p className="text-gray-600 mb-8 italic">"Working with TalentForce  has transformed our hiring process. They consistently deliver high-quality candidates who fit both our technical requirements and company culture."</p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                   <span className="font-bold text-primary">MC</span>
@@ -253,7 +253,7 @@ const Index = () => {
                   <Mail className="h-5 w-5 text-primary mt-1" />
                   <div>
                     <div className="font-medium">Email Us</div>
-                    <div className="text-gray-600">info@staffingpro.com</div>
+                    <div className="text-gray-600">info@talentforce.com</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -296,7 +296,7 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Briefcase className="h-6 w-6" />
-                <span className="text-xl font-bold">StaffingPro</span>
+                <span className="text-xl font-bold">TalentForce</span>
               </div>
               <p className="text-gray-400 mb-4">
                 Connecting the right talent with the right opportunities since 2010.
@@ -332,7 +332,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© 2024 StaffingPro. All rights reserved.</p>
+            <p>© 2025 TalentForce. All rights reserved.</p>
           </div>
         </div>
       </footer>

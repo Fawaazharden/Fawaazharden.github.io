@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center gap-2">
           <Briefcase className="h-6 w-6 text-primary" />
           <div className="text-2xl font-playfair font-bold text-primary">
-            StaffingPro
+            TalentForce
           </div>
         </div>
         
